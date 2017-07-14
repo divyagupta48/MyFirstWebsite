@@ -1,0 +1,83 @@
+ button,input[type="submit"],input[type="button"]
+{
+    height:40px;
+    width:100px;
+    background-color: #0052cc;
+    color:white;
+    font-style: bold;
+    font-size:18px;
+     position: absolute;
+    margin:10px;
+}
+#search
+{
+  width:30%;
+  height:20px;
+  margin:10px 5px 10px 250px;
+  border: 2px solid blue;
+}
+#search_button
+{
+  width:50px;
+  height:27px;
+  margin:20px 0px 10px 170px;
+  position: absolute;
+  top:21px;
+  left:290px;
+}
+
+#search:hover
+{
+  box-shadow: 2px 2px 5px blue;
+}
+#details
+{
+  background-color: #e6e6e6;
+  width:100%;
+  height:550px;
+  overflow-y:auto;
+  position:relative;
+
+}
+#topic_details
+{
+  background-color: #e6e6e6;
+  width:97%;
+  height:250px;
+  overflow-y:auto;
+  position:relative;
+  padding:10px;
+
+}
+#chat
+{
+  background-color: white;
+  width:100%;
+  height:550px;
+  overflow-y:auto;
+  position:relative;
+
+}
+#leave,#members_list
+{
+  display:inline-block;
+}
+#wrapper {
+    width: 100%;
+  
+}
+#outer_layout1{
+ width: 60%;
+    float:left; /* add this */
+    padding:5px;
+}
+#outer_layout2{
+     border: 2px solid blue;
+    float: left; /* add this */
+      width:37%;
+        margin:5px;
+        overflow-y:auto;
+        padding:5px;
+}
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Login Form</title>
+
+  <link rel="stylesheet" href="../css/login_signup_style.css">
+  <script>
+  function clickk()
+  {
+    var emailid=document.getElementById("email").value;
+    var pass=document.getElementById("password").value;
+    var em="user1@gmail.com";
+    var p="a";
+    if(em==emailid&&p==pass)
+      {
+        window.open("main.html","target_parent");
+      }
+    else if(emailid!=""&&pass!="")
+      document.getElementById("msg").innerHTML="Invalid username or password..!";
+  }
+  </script>
+</head>
+
+
+<body>
+<p id="msg"></p><br>
+  <div class="form">
+ 
+   <div id="login">   
+
+          <form>
+          <input type="email"required autocomplete="on" id="email" placeholder="Username" />   
+          <input type="password"required autocomplete="on" id="password" placeholder="Password"/>
+  <br> 
+       
+   <p class="forgot"><a href="#">Forgot Password?</a></p>
+ 
+         
+ <button class="button button-block" onclick="clickk();">Login</button>
+ 
+         
+ </form>
+
+
+      </div>
+    
+
+     
+    
+</div> 
+
+</body>
+
+</html>

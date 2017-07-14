@@ -1,0 +1,86 @@
+#partfirst
+{
+width:100%;
+	height:70px;
+	background-color: white;
+	color:blue;
+}
+#partfirst h3
+{
+	display: inline;
+	font-size:44px;
+color:white;
+    text-shadow: 5px 10px blue ;
+}
+#partsecond
+{
+width:100%;
+	height:500px;
+	background-color: blue;
+	color:white;
+	text-align:center;
+	text-shadow: 3px 2px red;
+}
+#partsecond img
+{
+	width:100%;
+	height:450px;
+}
+#about
+{
+	width:100%;
+	height:450px;
+	background-color: white;
+	text-align:center;
+	color:blue;
+}
+#about h1
+{
+	background-color: white;
+	text-align:left;
+	color:blue;
+}
+
+#contact
+{
+	width:100%;
+	height:100px;
+	background-color: blue;
+	text-align:center;
+	color:white;
+}
+#menu
+{
+	float:right;
+	width:20%;
+	height:10%;
+	background-color: white;
+}
+
+li
+{
+display: inline;
+margin: 0px 10px;
+font-size:24px;
+background-color: white;
+}
+li a
+{
+	color:blue;
+	background-color: white;
+	text-decoration: none;
+	padding:10px;
+	border:1px solid blue;
+	border-radius:5px;
+}
+li a:hover
+{
+	color:white;
+	background-color: blue;
+}
+#logo
+{
+	width:50px;
+	height:50px;
+	border-radius:50px;
+}

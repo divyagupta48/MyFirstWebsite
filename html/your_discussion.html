@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+<title>
+Your discussions
+</title>
+		
+<link rel="STYLESHEET" href="../css/index_style.css">
+<link rel="STYLESHEET" href="../css/main_style.css">
+<style>
+.boxes
+{
+	display:inline-block;
+	background-color: #e6e6ff;
+	box-shadow: 4px 4px 5px;
+	width:25%;
+	height:450px;
+	padding:20px;
+	margin:5px;
+	text-align:center;
+	font-size:24px;
+	text-shadow: 2px 1px blue;
+	font-family:sans-serif;
+	border-radius: 0px;
+	margin-bottom: 30px;
+	margin-right: 10px;
+}
+.under_boxes
+{
+display:inline-block;
+	background-color: #b3b3ff;
+	box-shadow: 4px 4px 5px;
+	width:30%;
+	height:100px;
+	padding:90px;
+	margin:35px;
+	text-align:center;
+	border-radius: 300px;
+
+}
+.under_boxes h3
+{
+	font-family:sans-serif;
+}
+</style> 
+
+
+</head>
+
+<body>
+<div id="partfirst">
+<img src="../images/logo.png" id="logo">&nbsp&nbsp<h3>DIORUM</h3>
+<div id="icon">
+<img src="../images/icon1.jpg" id="notifications">&nbsp&nbsp
+<a href="your_discussion.html"><img src="../images/icon2.png" title="Your Discussions"></a>&nbsp&nbsp
+<div class="dropdown">
+<img src="../images/icon3.jpg" class="dropbtn">&nbsp&nbsp&nbsp
+<div class="dropdown-content">
+ <a href="#">Your Profile</a>
+    <a href="prof_settings.html">Profile settings</a>
+    <a href="#">Give feedback</a>
+    <a href="../index.html">Logout</a>
+  </div>
+</div>
+</div>
+</div>
+<div id="lastpart">
+
+<h1>YOUR DISCUSSIONS</h1>
+</div>
+<br><br>
+
+	<center>
+	<div class="boxes"><p>
+	Click on the circle below to view the discussions you have marked. </p><a href="http://localhost/Project_diorum/php/starred.php">
+	<div class="under_boxes">
+	<h3>Starred Topics</h3>
+	</div></a>
+	</div>
+	
+	<div class="boxes">
+	<p>
+	Click on the circle below to view the discussions you are involved in.</p><a href="http://localhost/Project_diorum/php/following.php">
+		<div class="under_boxes">
+		<h3>Following Topics</h3>
+	</div></a>
+	</div>
+	<div class="boxes">
+	<p>
+	Click on the circle below to view the discussions you have created.</p><a href="http://localhost/Project_diorum/php/created.php">
+		<div class="under_boxes">
+		<h3>Created Topics</h3>
+	</div></a>
+	</div>
+</center>
+<div id="lastpart">
+
+</div>
+</body>
+</html>

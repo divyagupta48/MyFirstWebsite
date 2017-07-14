@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+<title>
+Create discussions
+</title>
+		
+<link rel="STYLESHEET" href="../css/index_style.css">
+<link rel="STYLESHEET" href="../css/main_style.css">
+<script>
+var c=1;
+function clikk(c)
+{i=1;
+	while(i<=c)
+	{
+var experts=document.getElementById("more_experts");
+experts.innerHTML="<input type='text' class='expert_name'><br><br>";i++;
+}
+return c++;
+}
+</script>
+<style>
+#details
+{
+	background-color: #e6e6e6;
+	width:100%;
+	height:430px;
+	overflow-y:auto;
+	position:relative;
+}
+.expert_name,#id1,#id2
+{
+	 position: absolute;
+ 	font-size:24px;
+    left: 130px;
+    width:30%;
+}
+#details label,textarea
+{	
+	 position: absolute;
+ 	font-size:24px;
+    left: 130px;
+}
+button,input[type="submit"],input[type="button"]
+{
+	height:40px;
+	width:100px;
+	background-color: #0052cc;
+	color:white;
+	font-style: bold;
+	font-size:18px;
+	 position: absolute;
+    right: 500px;
+}
+#post
+{
+	position: absolute;
+    left: 130px;
+	height:40px;
+	width:200px;
+	background-color: #0052cc;
+	color:white;
+	font-style: bold;
+	font-size:20px;
+}
+</style>
+
+</head>
+
+<body>
+<div id="partfirst">
+<img src="../images/logo.png" id="logo">&nbsp&nbsp<h3>DIORUM</h3>
+<div id="icon">
+<img src="../images/icon1.jpg" id="notifications">&nbsp&nbsp
+<a href="../html/your_discussion.html"><img src="../images/icon2.png" title="Your Discussions"></a>&nbsp&nbsp
+<div class="dropdown">
+<img src="../images/icon3.jpg" class="dropbtn">&nbsp&nbsp&nbsp
+<div class="dropdown-content">
+ <a href="#">Your Profile</a>
+    <a href="../html/prof_settings.html">Profile settings</a>
+    <a href="#">Give feedback</a>
+    <a href="../index.html">Logout</a>
+  </div>
+</div>
+</div>
+</div>
+
+<div id="lastpart">
+<p>
+Create your own discussion & help the world..!</p>
+</div>
+<div id="details">
+<br><br><br>
+<center>
+<form action="http://localhost/Project_diorum/php/create.php" method=post>
+<label>Enter a topic name or Ask a question:</label><br><br>
+<textarea rows="2" cols="50" name="topic_name"></textarea><br><br><br><br><br>
+<label>Category:</label><br><br>
+<input type="text" name="category" class="expert_name"><br><br>
+<label>Description:</label><br><br>
+<textarea rows="5" cols="70" name="Description"></textarea>
+<br><br><br><br><br><br><br><br><br><br><br>
+<label>Keep this discussion as:</label><input type=radio name =access value="public" selected>Public&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type=radio name =access value="private">Private<br><br>
+<label>Introduce your experts:</label><br><br>
+<input type="text" class="expert_name"><br><br>
+<input type="text" class="expert_name"><br><br><div id="more_experts"></div>
+<input type="button" id="add_experts" value="Add More" onclick="var c= clikk(c);"><br><br><br><br><br>
+<label>Add email id of the Experts:</label><br><br>
+<input type="email" id="id1"><br><br>
+<input type="email" id="id2"><button id="invite_experts">Invite</button><br><br><br><br><br>
+<input type="submit" id="post" value="Post Discussion"><br><br>
+</form>
+</center>
+<br><br>
+</div>
+	
+<div id="lastpart" style="width:100%;height:20px">
+
+</div>
+</body>
+</html>
